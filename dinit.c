@@ -26,7 +26,11 @@ FILE *dbfile;
 #ifdef unix
 #define TEXTFILE "/usr/games/lib/dunlib/dtextc.dat"
 #else /* ! unix */
+#ifdef VITA
+#define TEXTFILE "app0:/dtextc.dat"
+#else /* ! vita */
  I need a definition for TEXTFILE
+#endif /* ! vita */
 #endif /* ! unix */
 #endif /* ! __AMOS__ */
 #endif /* ! TEXTFILE */
