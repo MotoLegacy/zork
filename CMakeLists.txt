@@ -41,7 +41,7 @@ set(VITA_MKSFOEX_FLAGS "${VITA_MKSFOEX_FLAGS} -d PARENTAL_LEVEL=1")
 
 # Add any additional include paths here
 include_directories(
-
+    ../common
 )
 
 # Add any additional library paths here
@@ -53,37 +53,37 @@ link_directories(
 ## Build and link
 # Add all the files needed to compile here
 add_executable(${PROJECT_NAME}
-  actors.c 
-  ballop.c 
-  clockr.c 
-  demons.c 
-  dgame.c dinit.c 
+  actors.c
+  ballop.c
+  clockr.c
+  demons.c
+  dgame.c dinit.c
   dmain.c
-  dso1.c 
-  dso2.c 
-  dso3.c 
-  dso4.c 
-  dso5.c 
-  dso6.c 
-  dso7.c 
-  dsub.c 
+  dso1.c
+  dso2.c
+  dso3.c
+  dso4.c
+  dso5.c
+  dso6.c
+  dso7.c
+  dsub.c
   dverb1.c
-  dverb2.c 
-  gdt.c 
-  lightp.c 
-  local.c 
-  nobjs.c 
-  np.c 
-  np1.c 
-  np2.c 
+  dverb2.c
+  gdt.c
+  lightp.c
+  local.c
+  nobjs.c
+  np.c
+  np1.c
+  np2.c
   np3.c
-  nrooms.c 
-  objcts.c 
-  rooms.c 
-  sobjs.c 
-  supp.c 
-  sverbs.c 
-  verbs.c 
+  nrooms.c
+  objcts.c
+  rooms.c
+  sobjs.c
+  supp.c
+  sverbs.c
+  verbs.c
   villns.c
 )
 
